@@ -12,3 +12,8 @@ def delete_task(task_name):
     if task_name in tasks:
         tasks.remove(task_name)
         print(f"Đã xóa công việc: '{task_name}'")
+def view_tasks():
+    """Hiển thị danh sách công việc"""
+    print("Danh sách công việc:")
+    for index, task in enumerate(tasks, 1):
+        print(f"{index}. {task}")
